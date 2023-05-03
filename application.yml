@@ -1,5 +1,11 @@
 spring:
  application:
- name: ConfigServer
-server:
- port: 8088
+ name: Config-Default
+eureka:
+ client:
+  fetch-registry: true
+  registry-with-eureka: true
+  service-url:
+   default-zone: http://localhost:8761/eureka
+ instance:
+  prefer-ip-address: true
