@@ -1,1 +1,5 @@
-
+spring:
+	application:
+		name: ConfigServer
+server:
+	port: 8088
